@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/apply-setting.css">
+    <title>Setting</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        
+        <div class="input-group">
+            <label for="theme">Theme:</label>
+            <select id="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <div class="buttons">
+                <button class="button" onclick="saveSettings()">Save Settings</button>
+                <a href="index.html" class="button">Return</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/setting.js"></script>
+    <script src="js/apply-setting.js"></script>
+</body>
+</html>

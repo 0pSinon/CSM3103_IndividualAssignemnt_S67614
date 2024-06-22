@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/apply-setting.css">
+    <title>Measurement Converter</title>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Measurement Converter</h1>
+        <div class="input-group">
+            <label for="measurement-amount">Amount:</label>
+            <input type="number" id="measurement-amount" placeholder="Enter amount">
+        </div>
+        <div class="input-group">
+            <label for="measurement-from">From:</label>
+            <select id="measurement-from">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="measurement-to">To:</label>
+            <select id="measurement-to">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button class="button" onclick="convertMeasurement()">Convert</button>
+            <button id="view-history-btn" class="button" onclick="window.location.href='history.html'">View History</button>
+            <a href="index.html" class="button">Return</a>
+        </div>
+        <div class="input-group">
+            <label for="measurement-result">Result:</label>
+            <input type="text" id="measurement-result" readonly>
+        </div>
+    </div>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/measurement.js"></script>
+    <script src="js/apply-setting.js"></script>
+</body>
+</html>
